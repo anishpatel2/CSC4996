@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>To Do List</title>
+	</head>
+	<body>
+		<head> Add A New Task Here</head>
+		<form action="Todo.php" method="post">
+			<input type="text" name="taskname" required placeholder="Task Name"  />
+			<input type="text" name="taskdes" required placeholder="Task Description" />
+			<input id="submit" type="submit" name="add" value="Add Task">
+		</form>
+		<head> View Existing Tasks</head>
+		<form action="Todo.php" method="get">
+			<input id="submit" type="submit" name="view" value="View Tasks">
+		</form>
+		<head> Delete Old Tasks By Task Number</head>
+		<form action="Todo.php" method="post">
+			<input type="text" name="taskname" required placeholder="Please Insert Task Number To Be Deleted" />
+			<input id="submit" type="submit" name="delete" value="Delete Task ">
+		</form>
+	</body>
+</html>
